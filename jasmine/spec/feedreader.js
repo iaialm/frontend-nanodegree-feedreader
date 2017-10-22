@@ -27,11 +27,24 @@ $(function() {
         });
 
 
+		descibe('allFeeds has Url',function()){
+				
+				expect(allFeeds.url).toBeDefined();
+		        expect(allFeeds.url).not.toBe(null);
+		
+			
+				}
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-
+	    descibe('allFeeds object has a name',function()){
+				
+				expect(allFeeds.object).toBeDefined();
+		        expect(allFeeds.object).not.toBe(null);
+		
+			
+				}
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
