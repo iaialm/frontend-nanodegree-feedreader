@@ -165,5 +165,5 @@ describe("New Feed Selection", function() {
 
     });
 });
-});	
+
 }());
