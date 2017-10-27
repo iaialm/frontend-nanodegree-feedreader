@@ -2,8 +2,8 @@
  * a related set of tests. This suite is all about the RSS
  * feeds definitions, the allFeeds variable in our application.
  */
-$ (function() {
-    "use strict";
+$(function() {
+	 "use strict";
     describe('RSS Feeds', function() {
 
         /* This is our first test - it tests to make sure that the
@@ -19,8 +19,8 @@ $ (function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-    });
-});
+   
+
 
 /* TODO: Write a test that loops through each feed
  * in the allFeeds object and ensures it has a URL defined
@@ -29,7 +29,7 @@ $ (function() {
 
 it('allFeeds has Url', function() {
 
-    "use strict";
+  
     allFeeds.forEach(function(feed) {
         expect(feed.url).toBeDefined();
         expect(feed.url.length).not.toBe(0);
@@ -43,7 +43,7 @@ it('allFeeds has Url', function() {
      */
 
     it('allFeeds object has a name', function() {
-		"use strict";
+		
         allFeeds.forEach(function(feed) {
 	    expect(feed.name).toBeDefined();
         expect(feed.name.length).not.toBe(0);
@@ -54,12 +54,12 @@ it('allFeeds has Url', function() {
 
     });
 
-
+ });
 
 /* TODO: Write a new test suite named "The menu" */
 
 describe('menu-hidden', function() {
-    "use strict";
+   
     var body = document.hasClass('not-menu-hidden');
 
 
@@ -97,7 +97,7 @@ describe('menu-hidden', function() {
  */
 describe('test suite named "Initial Entries', function() {
 
-    "use strict";
+   
     beforEach(function(done) {
         loadFeed(0, function() {
             done();
@@ -136,7 +136,7 @@ describe('test suite named "Initial Entries', function() {
 
 describe("New Feed Selection", function() {
 
-    "use strict";
+    
     var initialFeedSelection;
     beforEach(function(done) {
         loadFeed(0, function() {
@@ -165,4 +165,5 @@ describe("New Feed Selection", function() {
 
     });
 });
+});	
 }());
