@@ -159,6 +159,6 @@ describe("New Feed Selection", function() {
         done();
 
     });
+}
 });
-
 }());
