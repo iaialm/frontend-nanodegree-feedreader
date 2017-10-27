@@ -2,7 +2,7 @@
  * a related set of tests. This suite is all about the RSS
  * feeds definitions, the allFeeds variable in our application.
  */
-$(function() {
+$ (function() {
     "use strict";
     describe('RSS Feeds', function() {
 
@@ -36,23 +36,24 @@ it('allFeeds has Url', function() {
 
     });
 
-
+ });
     /* TODO: Write a test that loops through each feed
      * in the allFeeds object and ensures it has a name defined
      * and that the name is not empty.
      */
 
     it('allFeeds object has a name', function() {
+		"use strict";
+        allFeeds.forEach(function(feed) {
+	    expect(feed.name).toBeDefined();
+        expect(feed.name.length).not.toBe(0);
+		expect(typeof feed.name).toBe("string");	
+            
 
-        for (var i in allFeeds) {
-            expect(allFeeds[i].name).toBeDefined();
-            expect(typeof allFeeds[i].name).toBe("string");
-            expect(allFeeds[i].name.length).not.toBe(0);
-
-        }
+       });
 
     });
-});
+
 
 
 /* TODO: Write a new test suite named "The menu" */
@@ -125,7 +126,11 @@ describe('test suite named "Initial Entries', function() {
 
     });
 
+
 });
+
+
+
 
 /* TODO: Write a new test suite named "New Feed Selection" */
 
@@ -145,7 +150,7 @@ describe("New Feed Selection", function() {
             });
         });
     });
-
+ 
     /* TODO: Write a test that ensures when a new feed is loaded
      * by the loadFeed function that the content actually changes.
      * Remember, loadFeed() is asynchronous.
@@ -159,6 +164,5 @@ describe("New Feed Selection", function() {
         done();
 
     });
-}
 });
 }());
