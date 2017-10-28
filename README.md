@@ -12,6 +12,15 @@ Whether you work in an organization that uses test-driven development or in an o
 # sorces of the code 
 https://github.com/udacity/frontend-nanodegree-feedreader
 
+# How to start
+to open the test code :
+
+open frontend-nanodegree-feedreader folder > then open jasmine > then open spec > then open feedreader.js to see the test code 
+
+
+to open the website :
+open frontend-nanodegree-feedreader folder > then open index.html
+
 # How will I complete this project?
 first of all i opend the file and explore it , then i found the first test ,and it was a guide for me to do the other tests , i search a lot and be insbired by many projects 
 
